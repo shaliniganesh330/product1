@@ -1,29 +1,23 @@
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    </mat-card-header>
-  <img mat-card-image margin :auto height =120 width = 120  src="../../assets/angular2.png" alt="">
+  </mat-card-header>
+  <img mat-card-image margin :auto height=120 width=120 src="../../assets/angular2.png" alt="">
   <mat-card-content>
-    <h3>Which is the national game of India</h3>    
-    <p>Hockey as our national game after fetching 8 gold medals in Olympics, 6 consecutive...<a routerLink="/register">viewmore</a></p> 
-       <!-- <span></span> -->
-        <!-- <button class ="classname" mat-stroked-button color="primary">viewmore</button> -->
-               <!-- <a routerLink="/register">viewmore</a> -->
-     </mat-card-content>
+    <h3>Which is the national game of India</h3>
+    <p>Hockey as our national game after fetching 8 gold medals in Olympics, 6 consecutive...<a
+        routerLink="/register">viewmore</a></p>
+  </mat-card-content>
   <mat-card-actions>
-     <button id="b1" mat-stroked-button color="primary" (click) = "countFunc()">{{count}}  <i class="material-icons" >   thumb_up</i></button>
-     <button id="b2" mat-stroked-button color="primary" (click) = "countFunction()">{{downcount}}<i class="material-icons">thumb_down</i></button>
-     <!-- <button (click)="countFunc()"><i class="material-icons">thumb_up</i></button>
-    <div width ="100px" height = "100px">{{count}}</div> -->
-     <!-- <button (click)="countFunction()"><i class="material-icons">thumb_down</i></button>
-    <div width ="100px" height = "100px" style="background-color:aqua">{{downcount}}</div> -->
+    <button id="buttonid" mat-stroked-button color="primary" (click)="countFunc()">{{count}} <i class="material-icons">
+        thumb_up</i></button>
+    <button id="buttonnid" mat-stroked-button color="primary" (click)="countFunction()">{{downcount}}<i
+        class="material-icons">thumb_down</i></button>
     <br>
     <br>
-    <!-- <button mat-stroked-button color="primary">comments</button> -->
     <mat-form-field class="example-full-width">
-      <textarea #comment matInput placeholder="Leave a comment"></textarea>
+      <textarea #comment matInput placeholder="Leave a comment" width="100%"></textarea>
     </mat-form-field>
     <button mat-stroked-button color="primary" (click)="comment.value=''">comments</button>
   </mat-card-actions>
 </mat-card>
-

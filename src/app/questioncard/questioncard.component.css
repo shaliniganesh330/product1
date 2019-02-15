@@ -8,10 +8,10 @@
   .material-icons{
     padding-left:10%;
   }
-  #b2{
+  #buttonnid{
     margin-right:35%;
   }
-  #b1{
+  #buttonid{
     margin-right:10%;
   }
  
@@ -38,6 +38,8 @@ span{
   padding-right: 70%;
 }
 .classname{
-  /* width: 50%;  */
   min-height: 0px;
+}
+.example-full-width{
+ width:70%;
 }

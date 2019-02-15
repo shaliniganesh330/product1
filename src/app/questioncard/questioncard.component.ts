@@ -13,10 +13,23 @@ export class QuestioncardComponent implements OnInit {
   ngOnInit() {
       }
 countFunc(){
-  this.count = this.count+1;
-  console.log(this.count);
+if(this.count==0 && this.downcount==0)
+   {
+     this.count = 1;
+   }
+   else
+   {
+     this.count =0;
+   }
 }
 countFunction(){
-  this.downcount =this.downcount+1;
+  if(this.count==0 && this.downcount==0)
+   {
+     this.downcount = 1;
+   }
+   else
+   {
+     this.downcount =0;
+   }
 }
 }
